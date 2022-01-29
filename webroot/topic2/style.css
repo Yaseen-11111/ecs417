@@ -4,12 +4,11 @@ figure {
     flex-flow: column;
     padding: 5px;
     max-width: 220px;
-    margin: auto;
 }
 
 img {
     max-width: 220px;
-    max-height: 150px;
+    max-height: 220px;
 }
 
 figcaption {
