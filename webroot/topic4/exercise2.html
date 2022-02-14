@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta lang="en">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="exercise2.css">
     <title>My Top 5</title>
   </head>
   <body>
-      <article>
+      <article class="top_movie_list">
         <h1>My Top 5 Movies of All Time</h1>
-        <table>
+        <table class="table_first">
             <tr>
               <th>Rank</th>
               <th>Movie</th>
@@ -19,47 +19,238 @@
             </tr>
             <tr>
               <td>1</td>
-              <td>Coco (2017)</td>
+              <td class="movie_row">Coco (2017)</td>
               <td>
                   <img class="image_frame" src="./coco.jpg" alt="coco poster">
               </td>
-              <td></td>
+              <td class="cast_table">
+                  <table class="table_second">
+                      <tr>
+                        <td>
+                            <figure>
+                              <img class="cast_image_frame" src="./coco_cast1.jpg">
+                              <figcaption>Miguel</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                          <figure>
+                              <img class="cast_image_frame" src="./coco_cast2.jpg">
+                              <figcaption>Héctor</figcaption>
+                            </figure>                          
+                          </td>
+                          <td>
+                              <figure>
+                                  <img class="cast_image_frame" src="./coco_cast3.jpg">
+                                  <figcaption>Ernesto</figcaption>
+                                </figure> 
+                          </td>
+                          <td>
+                              <figure>
+                                  <img class="cast_image_frame" src="./coco_cast4.jpg">
+                                  <figcaption>Papa</figcaption>
+                                </figure> 
+                          </td>
+                          <td>
+                              <figure>
+                                  <img class="cast_image_frame" src="./coco_cast5.jpg">
+                                  <figcaption>Mamá</figcaption>
+                                </figure> 
+                          </td>
+                          <td>
+                              <figure>
+                                  <img class="cast_image_frame" src="./coco_cast6.jpg">
+                                  <figcaption>Abuelita</figcaption>
+                                </figure> 
+                          </td>
+                      </tr>
+                  </table>
+              </td>
             </tr>
             <tr>
               <td>2</td>
-              <td>Joker (2019)</td>
+              <td class="movie_row">Joker (2019)</td>
               <td>
                 <img class="image_frame" src="./joker.jpg" alt="joker poster">
               </td>
-              <td></td>
+              <td>
+                <table>
+                    <tr>
+                        <td class="cast_table">
+                            <table class="table_second">
+                                <tr>
+                                  <td>
+                                      <figure>
+                                        <img class="cast_image_frame" src="./joker_cast1.jpg">
+                                        <figcaption>Joker</figcaption>
+                                      </figure>
+                                  </td>
+                                  <td>
+                                    <figure>
+                                        <img class="cast_image_frame" src="./joker_cast2.jpg">
+                                        <figcaption>Murray Franklin</figcaption>
+                                      </figure>                          
+                                    </td>
+                                    <td>
+                                        <figure>
+                                            <img class="cast_image_frame" src="./joker_cast3.jpg">
+                                            <figcaption>Sophie Dumond</figcaption>
+                                          </figure> 
+                                    </td>
+                                    <td>
+                                        <figure>
+                                            <img class="cast_image_frame" src="./joker_cast4.jpg">
+                                            <figcaption>Penny Fleck</figcaption>
+                                          </figure> 
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+              </td>
             </tr>
             <tr>
               <td>3</td>
-              <td>Spider-Man: Into the Spider-Verse (2018)</td>
+              <td class="movie_row">Spider-Man: Into the Spider-Verse (2018)</td>
               <td>
                 <img class="image_frame" src="./spider-man_miles.jpg" alt="spider-man: into the spider-verse poster">
               </td>
-              <td></td>
+              <td>
+                <table>
+                    <tr>
+                        <td class="cast_table">
+                            <table class="table_second">
+                                <tr>
+                                  <td>
+                                      <figure>
+                                        <img class="cast_image_frame" src="./spider_cast1.jpg">
+                                        <figcaption>Mile Morales</figcaption>
+                                      </figure>
+                                  </td>
+                                  <td>
+                                    <figure>
+                                        <img class="cast_image_frame" src="./spider_cast2.jpg">
+                                        <figcaption>Spider-Man</figcaption>
+                                      </figure>                          
+                                    </td>
+                                    <td>
+                                        <figure>
+                                            <img class="cast_image_frame" src="./spider_cast3.jpg">
+                                            <figcaption>Spider-Woman (Gwen)</figcaption>
+                                          </figure> 
+                                    </td>
+                                    <td>
+                                        <figure>
+                                            <img class="cast_image_frame" src="./spider_cast4.jpg">
+                                            <figcaption>Spider-Man Noir</figcaption>
+                                          </figure> 
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+              </td>
             </tr>
             <tr>
               <td>4</td>
-              <td>Inseption (2010)</td>
+              <td class="movie_row">Inseption (2010)</td>
               <td>
                 <img class="image_frame" src="./inseption.jpg" alt="inseption poster">
               </td>
-              <td></td>
+              <td>
+                <table>
+                    <tr>
+                        <td class="cast_table">
+                            <table class="table_second">
+                                <tr>
+                                  <td>
+                                      <figure>
+                                        <img class="cast_image_frame" src="./inseption_cast1.jpg">
+                                        <figcaption>Cobb</figcaption>
+                                      </figure>
+                                  </td>
+                                  <td>
+                                    <figure>
+                                        <img class="cast_image_frame" src="./inseption_cast2.jpg">
+                                        <figcaption>Arthur</figcaption>
+                                      </figure>                          
+                                    </td>
+                                    <td>
+                                        <figure>
+                                            <img class="cast_image_frame" src="./inseption_cast3.jpg">
+                                            <figcaption>Fischer</figcaption>
+                                          </figure> 
+                                    </td>
+                                    <td>
+                                        <figure>
+                                            <img class="cast_image_frame" src="./inseption_cast4.jpg">
+                                            <figcaption>Eames</figcaption>
+                                          </figure> 
+                                    </td>
+                                    <td>
+                                        <figure>
+                                            <img class="cast_image_frame" src="./inseption_cast5.jpg">
+                                            <figcaption>Ariadne</figcaption>
+                                          </figure> 
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+              </td>
             </tr>
             <tr>
               <td>5</td>
-              <td>The Dark Knight (2008)</td>
+              <td class="movie_row">The Dark Knight (2008)</td>
               <td>
                 <img class="image_frame" src="./batman.jpg" alt="the dark knight poster">
               </td>
-              <td></td>
+              <td>
+                <table>
+                    <tr>
+                        <td class="cast_table">
+                            <table class="table_second">
+                                <tr>
+                                  <td>
+                                      <figure>
+                                        <img class="cast_image_frame" src="./batman_cast1.jpg">
+                                        <figcaption>Batman</figcaption>
+                                      </figure>
+                                  </td>
+                                  <td>
+                                    <figure>
+                                        <img class="cast_image_frame" src="./batman_cast2.jpg">
+                                        <figcaption>Joker</figcaption>
+                                      </figure>                          
+                                    </td>
+                                    <td>
+                                        <figure>
+                                            <img class="cast_image_frame" src="./batman_cast3.jpg">
+                                            <figcaption>Alfred</figcaption>
+                                          </figure> 
+                                    </td>
+                                    <td>
+                                        <figure>
+                                            <img class="cast_image_frame" src="./batman_cast4.jpg">
+                                            <figcaption>James Gordon</figcaption>
+                                          </figure> 
+                                    </td>
+                                    <td>
+                                        <figure>
+                                            <img class="cast_image_frame" src="./batman_cast5.jpg">
+                                            <figcaption>Two Face</figcaption>
+                                          </figure> 
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+              </td>
             </tr>
-
-          </table>    
+          </table>
       </article>
-
   </body>
 </html>

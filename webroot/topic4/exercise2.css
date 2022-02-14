@@ -1,8 +1,72 @@
-img {
-    width: 220pt;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image_frame {
+    width: 180pt;
     border-radius: 5pt;
 }
 
-table {
-    text-align: center;
+.cast_image_frame, .cast_image_frame td {
+    width: 140pt;
+    border-radius: 5pt;
+    border: none;
 }
+
+.table_first, .table_first tr, .table_first tr td, .table_first tr th {
+    text-align: center;
+    border: 1pt rgb(88, 88, 88) solid;
+    border-radius: 5pt;
+    margin: 10pt 50pt;
+    padding: 3pt;
+}
+
+.table_second tr td, .table_second tr{
+    text-align: center;
+    border-radius: 5pt;
+    padding: 3pt;
+    border: none;
+    margin: 0;
+}
+
+
+.movie_row {
+    max-width: 75pt;
+}
+
+.cast_table {
+    overflow-x: scroll;
+}
+
+th {
+    background-color: rgb(219, 47, 81);
+    padding: 10pt;
+}
+
+h1 {
+    text-align: center;
+    background-color: crimson;
+    margin: auto;
+    padding: 10pt;
+}
+
+figure {
+    margin: auto;
+} 
+  
+.cast_image_frame, .cast_image_frame td {
+    width: 180pt;
+    border-radius: 5pt;
+    border: none;
+}
+
+.top_movie_list, .top_movie_list .table_second {
+    display: block;
+    max-width: 100%;
+}
+
+.top_movie_list .table_second {
+    width: 500pt;
+}
+
+
