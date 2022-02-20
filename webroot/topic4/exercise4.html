@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="exercise4.css">
+    <link rel="stylesheet" href="reset.css">    
+    <title>Week 4 - Exercise 4</title>
+  </head>
+  <body>
+      <section class="form_outer_container">
+          <header>
+              <h1>Shirt Order Form</h1>
+          </header>
+          <form>
+            <section class="form_inner_container">
+              <section>
+                  <a>
+                      Shirt Size
+                  </a><br>
+                  <select name="shirtSize" id="shirtSize" required>
+                    <option value=" ">Please select a size</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                  </select>
+                </section>
+                <section>
+                  <a>
+                      Sleeves
+                  </a><br>
+                  <input type="radio" name="sleeves" id="sleevesS" value="Short" required  checked>
+                  <label for="sleevesS">Short</label><br>
+                  <input type="radio" name="sleeves" id="sleevesL" value="Long" required>
+                  <label for="sleevesL">Long</label><br>
+                </section>
+                <section>
+                    <a>
+                        Choose Shirt Colour
+                    </a><br>
+                    <input type="color" name="shirtColour" id="shirtColour" required>
+                </section>
+                <section>
+                    <a>
+                        Quantity
+                    </a><br>
+                    <input type="number" name="quantity" id="quantity" min="1" max="10" required>
+                </section>
+                <section>
+                    <a>
+                        Date Requested
+                    </a><br>
+                    <input type="date" name="date" id="datefield" min="2022-01-01" required>
+                </section>
+            </section>
+            <section class="form_inner_container">
+                <section>
+                    <a>
+                        Name
+                    </a><br>
+                    <input type="text" name="name" id="name" required>
+                </section>
+                <section>
+                    <a>
+                        Email address
+                    </a><br>
+                    <input type="email" name="email" id="email" required>
+                </section>
+                <section>
+                    <a>
+                        Telephone number
+                    </a><br>
+                    <input type="tel" name="telephone" id="telephone" 
+                    pattern="44 - [0-9]{4} - [0-9]{6}"
+                    required>
+                    <label>Example: 44-7554-115569</label>
+                </section>
+            </section>
+            <section class="form_inner_container">
+                <section>
+                    <a>
+                        Address
+                    </a><br>
+                    <input type="text" name="address" id="address" required>
+                </section>
+                <section>
+                    <a>
+                        City
+                    </a><br>
+                    <input list="city" name="city" id="city" required>
+                    <datalist>
+                        <option value="London"></option>
+                        <option value="Liverpool"></option>
+                        <option value="Manchester"></option>
+                        <option value="Brighton"></option>
+                    </datalist>
+                </section>
+                <section>
+                    <a>
+                        Postcode
+                    </a><br>
+                    <input type="text" name="postcode" id="postcode" required>
+                </section>
+            </section>
+            <section class="form_inner_container submit_container">
+                <section class="centre_container">
+                    <a class="small_text">
+                        Please keep me informed about future shirt designs
+                    </a>
+                    <input type="checkbox">
+                </section>
+                <section class="centre_container">
+                    <input class="submit_button" type="submit" value="Submit">
+                    <input class="submit_button" type="submit" value="Clear Form">
+                </section>
+            </section>
+        </form>
+        </section>
+        <script src="week4.js"></script>
+  </body>
+</html>
