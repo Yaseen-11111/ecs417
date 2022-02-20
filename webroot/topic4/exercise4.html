@@ -13,7 +13,7 @@
           <header>
               <h1>Shirt Order Form</h1>
           </header>
-          <form>
+          <form action="http://webprojects.eecs.qmul.ac.uk/un300/week4/week4_process.php" method="post">
             <section class="form_inner_container">
               <section>
                   <a>
@@ -90,8 +90,8 @@
                     <a>
                         City
                     </a><br>
-                    <input list="city" name="city" id="city" required>
-                    <datalist>
+                    <input list="cityList" name="city" id="city" required>
+                    <datalist id="cityList">
                         <option value="London"></option>
                         <option value="Liverpool"></option>
                         <option value="Manchester"></option>
@@ -114,7 +114,7 @@
                 </section>
                 <section class="centre_container">
                     <input class="submit_button" type="submit" value="Submit">
-                    <input class="submit_button" type="submit" value="Clear Form">
+                    <input class="submit_button" type="reset" value="Clear Form">
                 </section>
             </section>
         </form>
