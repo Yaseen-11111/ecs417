@@ -4,32 +4,64 @@
     <meta charset="utf-8">
     <meta lang="en">
     <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="height=device-height">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="exercise2.css">
     <title>Profile: Yaseen Rashid</title>
   </head>
   <body>
-      <header>
-          <h1>Yaseen Rashid</h1><hr>
-          <h2>Computer Sciene Student</h2>
+    <nav class="navBar titleBar">
+        <header>
+            <h1>Yaseen Rashid</h1>
         </header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#aboutMe">About Myself</a>
-                </li>
-                <li>
-                    <a href="#myHobbies">My Hobbies</a>
-                </li>
-                <li>
-                    <a href="#myCV">My CV</a>
-                </li>
-                <li>
-                    <a href="#myLinks">Intersting Links</a>
-                </li>
-            </ul>
-        </nav>
-        <article>
+        <ul>
+            <li>
+                <a href="#aboutMe">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+        </ul>
+    </nav>
+    <article class="cols">
+        <section class="col1 col">
+            <nav class="navBarSml">
+                <ul>
+                    <li>
+                        <a href="#aboutMe">About Myself</a>
+                    </li>
+                    <li>
+                        <a href="#myHobbies">My Hobbies</a>
+                    </li>
+                    <li>
+                        <a href="#myCV">My CV</a>
+                    </li>
+                    <li>
+                        <a href="#myLinks">Intersting Links</a>
+                    </li>
+                </ul>
+            </nav>
+            <section id="skills">
+                <ol class="listCustom">
+                    <h3>
+                        Top 3 Skills
+                    </h3><br>
+                    <li class="gold">
+                        (1) Java
+                    </li>
+                    <li class="silver">
+                        (2) HTML, CSS
+                    </li>
+                    <li class="bronze">
+                        (3) SQL
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section class="col2 col">
             <section id="aboutMe">
                 <h3>About Myself</h3>
                 <p>
@@ -38,15 +70,20 @@
                 </p>
                 <figure>
                     <img src="./winterwonderland.jpg" alt="winter wonderland picture" width="220px" height="220px">
-                    <figcaption>Yaseen Rashid</figcaption>
                 </picture>
             </section>
-            <section id="myHobbies">
-                <h3>My Hobbies</h3>
-                <p>
-                    In my spare time, I enjoy boxing as I use to compete in tournements back home and go to the gym regularly to keep 
-                    myself fit. When I began University, I looked into other sport societies where I am now apart of the QM Rugby Team.
-                </p>
+            <section id="education">
+                <h3>
+                    Education
+                </h3>
+                <ul>
+                    <li>
+                        2019 - 2021 | Farnborough Sixth Form College
+                    </li>
+                    <li>
+                        2021 - Present | Queen Mary University Of London
+                    </li>
+                </ul>
             </section>
             <section id="myCV">
                 <h3>My CV</h3>
@@ -72,10 +109,48 @@
                     </li>
                 </ul>
             </section>
-        </article>
-        <footer>
-            <i>Copyright © 2022 Yaseen Rashid</i>
-        </footer>
+        </section>
+        <section class="col3 col">
+            <section id="myHobbies" class="listCustom">
+                <h3>My Hobbies</h3>
+                <p>
+                    In my spare time, I enjoy boxing as I use to compete in tournements back home and go to the gym regularly to keep 
+                    myself fit. When I began University, I looked into other sport societies where I am now apart of the QM Rugby Team.
+                </p>
+                <ul>
+                    <li>Boxing</li>
+                    <li>Gym</li>
+                    <li>Rugby</li>
+                    <li>Programming</li>
+                </ul>
+            </section>
+            <section id="top3Movies" class="listCustom">
+                <h3>
+                    Top 5 Movies
+                </h3>
+                <ul>
+                    <li>
+                        Coco (2017)
+                    </li>
+                    <li>
+                        Joker (2019)
+                    </li>
+                    <li>
+                        Spider-Man: Into the Spider-Verse (2018)
+                    </li>
+                    <li>
+                        Inception (2010)
+                    </li>
+                    <li>
+                        The Dark Knight (2008)
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </article>
+    <footer>
+        <i>Copyright © 2022 Yaseen Rashid</i>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

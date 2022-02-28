@@ -1,0 +1,117 @@
+body {
+	font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+    width: fit-content;
+}
+
+.titleBar {
+    float: left;
+    width: 100%;
+    padding: 1em;
+    background-color: rgb(129, 46, 46);
+}
+
+.navBar header {
+    float: left;
+    font-size: 1em;
+}
+
+.navBar {
+    float: left;
+}
+
+.navBar ul {
+    display: inline-flex;
+    font-size: 1em;
+}
+
+.navBar li, .navBarSml li, .listCustom li {
+    padding: 1em;
+    list-style: none;
+    border-radius: 0.25em;
+}
+
+.navBar li:hover {
+    background-color: rgb(138, 69, 69);
+}
+
+.navBarSml li:hover {
+    background-color: rgb(231, 224, 216);
+}
+
+.navBar li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navBarSml {
+    background-color: rgb(218, 211, 203);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.25em;
+}
+
+.navBarSml li a, .listCustom li {
+    text-decoration: none;
+    color: black;
+}
+
+.navBarSml ul, .listCustom ul {
+    padding: 0;
+}
+
+.listCustom {
+    background-color: rgb(218, 211, 203);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.25em;
+}
+
+.listCustom h3 {
+    margin: 0;
+    padding: 1em;
+    background-color: rgb(129, 46, 46);
+    border-radius: 0.25em;
+}
+
+.cols {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding: 1em;
+}
+
+.col1, .col3 {
+    width: 23.5%;
+}
+
+.col2 {
+    width: 45%;
+
+}
+
+.cols::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gold {
+    background-color: rgba(255, 217, 0, 0.5);
+}
+
+.silver {
+    background-color: rgba(192, 192, 192, 0.5);
+}
+
+.bronze {
+    background-color: rgba(222, 184, 135, 0.5);
+}
