@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="miniproject.css">
 	<meta charset="UTF-8">
 	<title>My Portfolio</title>
 </head>
 <body>
 <nav>
-	<ul>
-		<li>
-			<a>
-				LOGO TO BE PLACED
-			</a>
-		</li>
+	<a>
+		LOGO TO BE PLACED
+	</a>
+	<ul class="navBar">
 		<li>
 			<a href="#aboutMe">About Me</a>
 		</li>
@@ -33,6 +32,16 @@
 		</li>
 	</ul>
 </nav>
+<article class="headerArticle">
+	<header>
+		<h1>
+			My Portfolio
+		</h1>
+	</header>
+	<section>
+		This is my asdjsadjaspodasds as dj aspdj apisjd asd
+	</section>
+</article>
 
 
 
