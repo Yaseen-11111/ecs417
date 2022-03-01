@@ -1,0 +1,185 @@
+body {
+	font-family: Helvetica, sans-serif;
+    margin: 0;
+    position: relative;
+}
+
+figure {
+    margin: 0;
+    width: fit-content;
+    border-radius: 5pt;
+    width: fit-content;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.responsive {
+    width: 15em;
+    height: auto;
+  }
+
+.titleBar {
+    position: relative;
+    float: left;
+    width: 97.4%;
+    padding: 1em;
+    background-color: rgb(129, 46, 46);
+}
+
+.navBar header {
+    float: left;
+    font-size: 2em;
+    padding: 1em;
+}
+
+.navBar {
+    float: left;
+}
+
+.navBar ul {
+    display: inline-flex;
+    font-size: 1em;
+    padding: 1.5em;
+}
+
+.navBar li, .navBarSml li, .listCustom li {
+    padding: 1em;
+    list-style: none;
+    border-radius: 0.25em;
+}
+
+.navBar li:hover {
+    background-color: rgb(138, 69, 69);
+}
+
+.navBarSml li:hover {
+    background-color: rgb(231, 224, 216);
+}
+
+.navBar li a{
+    font-size: 1em;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navBarSml {
+    background-color: rgb(218, 211, 203);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.25em;
+    position: relative;
+}
+
+.navBarSml li a, .listCustom li {
+    text-decoration: none;
+    color: black;
+}
+
+.navBarSml ul, .listCustom ul {
+    padding: 0;
+}
+
+.listCustom {
+    background-color: rgb(218, 211, 203);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.25em;
+    position: relative;
+}
+
+.listCustom h3 {
+    font-size: 1em;
+    margin: 0;
+    padding: 1em;
+    background-color: rgb(129, 46, 46);
+    border-radius: 0.25em;
+}
+
+.col21 {
+    display: block;
+    float: left;
+    width: 55%;
+}
+
+.col22 {
+    display: block;
+    width: 45%;
+    float: right;
+}
+
+.cols {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding: 1em;
+    display: block;
+}
+
+.col h3 {
+    font-size: 1.5em;
+    padding: 1em 1em 1em 0;
+}
+
+.col p {
+    font-size: 1em;
+    padding: 1em 1em 1em 0;
+}
+
+#aboutMe section{
+    display: flex;
+}
+
+.listCustom h3 {
+    text-align: center;
+}
+
+.col p, .col a {
+    font-size: 1em;
+}
+
+.col1 {
+    float: left;
+}
+
+.col1, .col3 {
+    width: 23.5%;
+}
+
+.col2 {
+    width: 45%;
+
+}
+
+.col3 {
+    float: right;
+}
+
+.cols::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gold {
+    margin: 0 0 1em 0;
+    background-color: rgba(255, 217, 0, 0.5);
+}
+
+.silver {
+    margin: 1em 0;
+    background-color: rgba(192, 192, 192, 0.5);
+}
+
+.bronze {
+    margin: 1em 0;
+    background-color: rgba(222, 184, 135, 0.5);
+}
