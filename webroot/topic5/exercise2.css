@@ -4,6 +4,10 @@ body {
     position: relative;
 }
 
+a, p {
+    line-height: normal;
+}
+
 figure {
     margin: 0;
     width: fit-content;
