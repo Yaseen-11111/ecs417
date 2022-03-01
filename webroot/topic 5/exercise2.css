@@ -8,9 +8,14 @@ figure {
     width: fit-content;
 }
 
+.responsive {
+    width: 15em;
+    height: auto;
+  }
+
 .titleBar {
     float: left;
-    width: 100%;
+    width: 97.4%;
     padding: 1em;
     background-color: rgb(129, 46, 46);
 }
@@ -89,13 +94,25 @@ figure {
     padding: 1em;
 }
 
+.col h3 {
+    font-size: 1em;
+}
+
+.col p, .col a {
+    font-size: 1em;
+}
+
 .col1, .col3 {
     width: 23.5%;
 }
 
 .col2 {
-    width: 45%;
+    width: 40%;
 
+}
+
+.col3 {
+    float: right;
 }
 
 .cols::after {
