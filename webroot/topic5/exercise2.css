@@ -116,18 +116,6 @@ figure {
     float: right;
 }
 
-.cols {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.col {
-    float: left;
-    padding: 1em;
-    display: block;
-}
-
 .col h3 {
     font-size: 1.5em;
     padding: 1em 1em 1em 0;
@@ -150,21 +138,20 @@ figure {
     font-size: 1em;
 }
 
-.col1 {
+.col {
+    box-sizing: border-box;
     float: left;
+    padding: 0.25em;
+    display: block;
 }
 
 .col1, .col3 {
-    width: 23.5%;
+    width: 25%;
 }
 
 .col2 {
-    width: 45%;
+    width: 50%;
 
-}
-
-.col3 {
-    float: right;
 }
 
 .cols::after {
