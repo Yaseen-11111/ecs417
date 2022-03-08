@@ -11,7 +11,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <header class="navbar-brand">
-            <h1>Yaseen Rashid</h1>
+            <h2>Yaseen Rashid</h2>
         </header>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -25,10 +25,32 @@
             </li>
         </ul>
     </nav>
-    <article>
-        <section>
-            <nav>
-                <ul>
+    <article class="container-fluid m-0 p-3">
+        <div class="row">
+          <div class="col-3">
+            <section class="bg-light rounded-5 m-2 p-2">
+                <header>
+                    <h4>
+                        Research Interest
+                    </h4>
+                </header>
+                <ul class="list-unstyled">
+                    <li>
+                        Artificial Intelligence
+                    </li>
+                    <li>
+                        Machine Learning
+                    </li>
+                    <li>
+                        Robotics
+                    </li>
+                    <li>
+                        Neural Networks
+                    </li>
+                </ul>
+            </section>
+            <nav class="bg-light rounded-5 m-2 p-2">
+                <ul class="nav nav-pills flex-column">
                     <li>
                         <a href="#aboutMe">About Myself</a>
                     </li>
@@ -43,48 +65,58 @@
                     </li>
                 </ul>
             </nav>
-            <section id="skills">
-                <ol class="listCustom">
+            <ul id="skills" class="list-group bg-light rounded-5 p-2 m-2">
+                <header class="bg-warning list-item text-center p-2">
                     <h3>
                         Top 3 Skills
-                    </h3><br>
-                    <li class="gold">
-                        (1) Java
-                    </li>
-                    <li class="silver">
-                        (2) HTML, CSS
-                    </li>
-                    <li class="bronze">
-                        (3) SQL
-                    </li>
-                </ul>
-            </section>
-        </section>
-        <section class="col2 col">
+                    </h3>
+                </header><br>
+                <li class="list-group-item">
+                    (1) Java
+                </li>
+                <li class="list-group-item">
+                    (2) HTML, CSS
+                </li>
+                <li class="list-group-item">
+                    (3) SQL
+                </li>
+            </ul>
+          </div>
+          <div class="col-6">
             <section id="aboutMe">
                 <h3>About Myself</h3>
-                <section>
-                    <p>
+                <section class="row">
+                    <p class="col">
                         Hi there, I'm Yaseen Rashid, where I am studying Computer Science at Queen Mary's University of London, as well 
                         working as a Math tutor for students up to A-Level Math.
                     </p>
-                    <figure>
-                        <img src="./winterwonderland.jpg" alt="winter wonderland picture" class="responsive">
+                    <figure class="col">
+                        <img src="./winterwonderland.jpg" alt="winter wonderland picture" class="responsive w-100">
                     </figure>
                 </section>
             </section><hr>
-            <section id="education">
+            <section id="education" class="table-responsive">
                 <h3>
                     Education
                 </h3>
-                <ul>
-                    <li>
-                        2019 - 2021 | Farnborough Sixth Form College
-                    </li>
-                    <li>
-                        2021 - Present | Queen Mary University Of London
-                    </li>
-                </ul>
+                <table class="table">
+                    <tr>
+                        <th>
+                            2019 - 2021
+                        </th>
+                        <th>
+                            Farnborough Sixth Form College
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            2021 - Present
+                        </th>
+                        <th>
+                            Queen Mary University Of London
+                        </th>
+                    </tr>
+                </table>
             </section><hr>
             <section id="myCV">
                 <h3>My CV</h3>
@@ -110,47 +142,54 @@
                     </li>
                 </ul>
             </section>
-        </section>
-        <section class="col3 col">
-            <section id="myHobbies" class="listCustom">
-                <h3>My Hobbies</h3>
+          </div>
+          <div class="col-3">
+            <section id="myHobbies" class="bg-light rounded-5 m-2 p-2">
+                <header class="bg-warning text-center p-2">
+                    <h3>
+                        My Hobbies
+                    </h3>
+                </header>
                 <p>
                     In my spare time, I enjoy boxing as I use to compete in tournements back home and go to the gym regularly to keep 
                     myself fit. When I began University, I looked into other sport societies where I am now apart of the QM Rugby Team.
                 </p>
-                <ul>
-                    <li>Boxing</li>
-                    <li>Gym</li>
-                    <li>Rugby</li>
-                    <li>Programming</li>
+                <ul class="list">
+                    <li class="list-item">Boxing</li>
+                    <li class="list-item">Gym</li>
+                    <li class="list-item">Rugby</li>
+                    <li class="list-item">Programming</li>
                 </ul>
             </section>
-            <section id="top3Movies" class="listCustom">
-                <h3>
-                    Top 5 Movies
-                </h3>
-                <ul>
-                    <li>
+            <section id="top3Movies" class="bg-light rounded-5 m-2 p-2">
+                <header class="bg-warning text-center p-2">
+                    <h3>
+                        Top 5 Movies
+                    </h3>
+                </header>
+                <ul class="list">
+                    <li class="list-item">
                         Coco (2017)
                     </li>
-                    <li>
+                    <li class="list-item">
                         Joker (2019)
                     </li>
-                    <li>
+                    <li class="list-item">
                         Spider-Man: Into the Spider-Verse (2018)
                     </li>
-                    <li>
+                    <li class="list-item">
                         Inception (2010)
                     </li>
-                    <li>
+                    <li class="list-item">
                         The Dark Knight (2008)
                     </li>
                 </ul>
             </section>
-        </section>
+          </div>
+        </div>
     </article>
-    <footer>
-        <i>Copyright © 2022 Yaseen Rashid</i>
+    <footer class="navbar-expand-lg navbar-dark bg-dark p-3">
+        <i class="text-light">Copyright © 2022 Yaseen Rashid</i>
     </footer>
     <script src="script.js"></script>
   </body>
