@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="miniproject.css">
-	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>My Portfolio</title>
 </head>
 <body>
@@ -38,7 +40,7 @@
 			Welcome to my portfolio
 		</h1>
 	</header>
-	<section id="#aboutMe" class="content-container-1 row">
+	<section id="aboutMe" class="content-container-1 row">
 		<section class="col-fit content">
 			<header>
 				<h2>
@@ -64,7 +66,7 @@
 		</section>
 		<section class="col-fit content">
 			<figure class="profile-picture">
-				<img src="winterwonderland.jpg">
+				<img src="winterwonderland.jpg" alt="winter wonderland picture">
 				<figcaption>
 					Aspiring machine learning and AI specialist
 				</figcaption>
@@ -72,6 +74,10 @@
 
 		</section>
 	</section><hr>
+	<a id="jsTop" class="top-link hide" href="">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+	</a>
+	<script src="topScroll.js"></script>
 
 	<section id="experience" class="content-container row">
 		<section class="col-fit content">
@@ -120,11 +126,20 @@
 					My Blog
 				</h2><hr>
 			</header>
+			<section>
+				<?php
+				require ('login.html');
+				?>
+			</section>
 		</section>
 	</section><hr>
 </article>
-<footer>
-
+<footer class="row">
+	<i class="col">Copyright © 2022 Yaseen Rashid, Projects</i>
+	<section class="col-fit">
+		<a href="https://www.instagram.com/yaseenrashid_/" target="_blank" class="fa fa-instagram"></a>
+		<a href="https://www.linkedin.com/in/yaseen-rashid-46a18b189/" target="_blank" class="fa fa-linkedin"></a>
+	</section>
 </footer>
 </body>
 </html>
