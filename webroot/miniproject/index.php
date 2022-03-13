@@ -127,9 +127,7 @@
 				</h2><hr>
 			</header>
 			<section>
-				<?php
-				require ('login.html');
-				?>
+
 			</section>
 		</section>
 	</section><hr>
