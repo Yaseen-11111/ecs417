@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49c0b516-2518-4fbc-80d7-c486caec5fe8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/viewBlog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addEntry.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniproject.css" beforeDir="false" afterPath="$PROJECT_DIR$/miniproject.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/topScroll.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +62,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yasee\ecs417\webroot\miniproject" />
       <recent name="C:\Users\yasee\ecs417\miniproject" />
     </key>
   </component>
@@ -71,7 +77,7 @@
       <workItem from="1645461506530" duration="15937000" />
       <workItem from="1647116965406" duration="6600000" />
       <workItem from="1647193929143" duration="6165000" />
-      <workItem from="1647200389377" duration="4642000" />
+      <workItem from="1647200389377" duration="11719000" />
     </task>
     <servers />
   </component>

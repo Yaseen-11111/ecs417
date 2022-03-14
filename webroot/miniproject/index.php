@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>My Portfolio</title>
 </head>
-<body>
+<body id="indexBody">
 <nav>
 	<a>
 		LOGO TO BE PLACED
@@ -31,6 +31,9 @@
 		</li>
 		<li>
 			<a href="#blog">Blog</a>
+		</li>
+		<li id="logBox">
+			<a href="login.html">Log in</a>
 		</li>
 	</ul>
 </nav>
@@ -74,7 +77,7 @@
 
 		</section>
 	</section><hr>
-	<a id="jsTop" class="top-link hide" href="">
+	<a id="jsTop" class="top-link hide" href="#indexBody">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
 	</a>
 	<script src="topScroll.js"></script>
@@ -122,9 +125,11 @@
 	<section id="blog" class="content-container row">
 		<section class="col-fit content">
 			<header>
-				<h2>
+				<h2 class="col">
 					My Blog
-				</h2><hr>
+				</h2>
+				<button class="add-post" type="button">Add Post</button>
+				<hr>
 			</header>
 			<?php require ('viewBlog.php')?>
 		</section>

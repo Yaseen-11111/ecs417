@@ -1,24 +1,33 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: "Calibri Light", sans-serif;
 	background: linear-gradient(360deg, rgba(2, 0, 36, 1) 40%, rgba(77, 45, 45, 1) 100%);
 	height: fit-content;
 }
 
-.top-link {
-	transition: all 0.25s ease-in-out;
+.log-body {
+	background: whitesmoke !important;
+}
+
+
+.top-link, .log-link {
+	transition: all 0.25s ease-in-out!important;
 	position: fixed;
-	bottom: 2em;
-	right: 0;
 	display: inline-flex;
 	cursor: pointer;
 	align-items: center;
 	justify-content: center;
-	margin: 0 3em 3em 0;
 	border-radius: 50%;
 	padding: 0.25em;
 	width: 5rem;
 	height: 5rem;
 	background-color: #F8F8F8;
+	bottom: 2em;
+	right: 0;
+	margin: 0 3em 3em 0;
 }
 
 .top-link.show {
@@ -33,8 +42,8 @@ body {
 
 .top-link svg {
 	fill: #000;
-	width: 24px;
-	height: 12px;
+	width: 2em;
+	height: 1em;
 }
 
 .top-link:hover {
@@ -48,6 +57,7 @@ body {
 nav .nav-bar , nav .nav-bar li, nav {
 	display: inline-flex;
 	width: 100%;
+	color: whitesmoke;
 }
 
 nav .nav-bar a, nav a {
@@ -62,9 +72,11 @@ nav .nav-bar li a {
 	font-size: 12pt;
 }
 
+/*noinspection CssInvalidPropertyValue*/
 nav .nav-bar li {
-	padding: 10pt;
+	padding: 8pt;
 	border-radius: 5pt;
+	width: -webkit-fill-available;
 }
 
 nav .nav-bar li:hover {
@@ -135,7 +147,7 @@ header hr {
 }
 
 .content-container {
-	margin: 1em 2em 1em 2em;
+	margin: 1em 3em 1em 3em;
 	padding: 1rem!important;
 	background-color: rgba(2, 0, 36, 0.25);
 	box-shadow: 0 1rem 2rem rgba(178, 177, 177, 0.05);
@@ -148,6 +160,65 @@ header hr {
 	background-color: rgba(2, 0, 36, 0.25);
 	box-shadow: 0 1rem 2rem rgba(178, 177, 177, 0.05);
 	border-radius: 1rem;
+}
+
+.content-container-log {
+	margin: 10% 20% 1em 20%;
+	display: flex;
+	background: linear-gradient(360deg, rgba(2, 0, 36, 1) 40%, rgba(77, 45, 45, 1) 100%);
+	height: fit-content;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.38);
+	border-radius: 1rem;
+	text-align: center;
+	padding: 1em;
+}
+
+/*noinspection CssInvalidPropertyValue*/
+#logIn {
+	width: -webkit-fill-available;
+}
+
+#logIn header {
+	margin: 1em;
+	padding: 1rem;
+}
+
+/*noinspection CssInvalidPropertyValue*/
+.log-input-box {
+	margin: 1em 2em 1em 2em;
+	padding: 1rem;
+	width: -webkit-fill-available;
+	height: 5em;
+	border-radius: 1em;
+}
+
+.log-submit-box {
+	margin: 1em auto;
+	display: block;
+	height: 5em;
+	background-color: rgb(229, 36, 73);
+	border-radius: 1em;
+	border: none;
+	box-shadow: 0 1rem 2rem rgba(175, 175, 175, 0.38);
+	padding: 2em 8em;
+	cursor: pointer;
+	font-size: 12pt;
+}
+
+.log-home-box {
+	margin: 1em auto;
+	display: block;
+	height: 5em;
+	width: fit-content;
+	background-color: rgba(255, 255, 255, 0.55);
+	border-radius: 1em;
+	border: none;
+	box-shadow: 0 1rem 2rem rgba(175, 175, 175, 0.38);
+	padding: 2em 8em;
+	cursor: pointer;
+	font-size: 12pt;
+	text-decoration: none;
+	color: black;
 }
 
 .content {
@@ -187,6 +258,19 @@ header hr {
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0 1rem 2rem rgba(178, 177, 177, 0.05);
 	border-radius: 1rem;
+}
+
+.add-post {
+	padding: 0.5em 2em;
+	border: none;
+	border-radius: 0.5em;
+	box-shadow: 0 0.5rem 1rem rgba(210, 209, 209, 0.05);
+	background-color: rgba(108, 103, 180, 0.6);
+	color: whitesmoke;
+}
+
+button:hover {
+	opacity: 0.8;
 }
 
 .content-container .blog-card, .blog-card header h3, .blog-card header h1, .blog-card header h2, .blog-card header a, .blog-card p {
