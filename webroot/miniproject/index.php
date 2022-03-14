@@ -126,9 +126,7 @@
 					My Blog
 				</h2><hr>
 			</header>
-			<section>
-
-			</section>
+			<?php require ('viewBlog.php')?>
 		</section>
 	</section><hr>
 </article>

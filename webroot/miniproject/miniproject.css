@@ -93,6 +93,12 @@ header h3 {
 	font-weight: bolder;
 }
 
+header a {
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 12pt;
+}
+
 header hr {
 	margin: 1rem 0;
 }
@@ -129,7 +135,6 @@ header hr {
 }
 
 .content-container {
-	width: 100%;
 	margin: 1em 2em 1em 2em;
 	padding: 1rem!important;
 	background-color: rgba(2, 0, 36, 0.25);
@@ -173,6 +178,19 @@ header hr {
 
 *, ::after, ::before {
 	box-sizing: border-box;
+}
+
+.blog-card {
+	color: black!important;
+	padding: 1rem!important;
+	margin-bottom: 2em;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 1rem 2rem rgba(178, 177, 177, 0.05);
+	border-radius: 1rem;
+}
+
+.content-container .blog-card, .blog-card header h3, .blog-card header h1, .blog-card header h2, .blog-card header a, .blog-card p {
+	color: black !important;
 }
 
 .fa {
