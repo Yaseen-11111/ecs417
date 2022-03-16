@@ -123,12 +123,14 @@
 	</section><hr>
 
 	<section id="blog" class="content-container row">
-		<section class="col-fit content">
+		<?php require ('addEntry.php')?>
+		<section id="blogContainer" class="col-fit content">
 			<header>
 				<h2 class="col">
 					My Blog
 				</h2>
-				<button class="add-post" type="button">Add Post</button>
+				<button id="addPost" class="add-post" type="button">Add Post</button>
+				<script src="addPost.js"></script>
 				<hr>
 			</header>
 			<?php require ('viewBlog.php')?>

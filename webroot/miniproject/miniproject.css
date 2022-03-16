@@ -35,6 +35,8 @@ body {
 	opacity: 0.9;
 }
 
+
+
 .top-link.hide {
 	visibility: hidden;
 	opacity: 0;
@@ -101,14 +103,14 @@ header h2 {
 header h3 {
 	margin: 1rem 0;
 	color: #d0cdcd;
-	font-size: 13pt;
+	font-size: 16pt;
 	font-weight: bolder;
 }
 
 header a {
 	text-decoration: none;
 	color: whitesmoke;
-	font-size: 12pt;
+	font-size: 14pt;
 }
 
 header hr {
@@ -144,6 +146,7 @@ header hr {
 
 .profile-picture figcaption {
 	text-align: center;
+	font-size: 12pt;
 }
 
 .content-container {
@@ -192,7 +195,7 @@ header hr {
 	border-radius: 1em;
 }
 
-.log-submit-box {
+.log-submit-box, .blog-submit-box {
 	margin: 1em auto;
 	display: block;
 	height: 5em;
@@ -226,7 +229,7 @@ header hr {
 }
 
 .content p {
-	font-size: 12pt;
+	font-size: 14pt;
 	font-weight: lighter;
 }
 
@@ -258,6 +261,71 @@ header hr {
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0 1rem 2rem rgba(178, 177, 177, 0.05);
 	border-radius: 1rem;
+}
+
+/*noinspection CssInvalidPropertyValue*/
+.blog-add-card {
+	color: black !important;
+	padding: 1rem !important;
+	margin: auto;
+	width: 50%;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 1rem 2rem rgba(178, 177, 177, 0.05);
+	border-radius: 1rem;
+	position: absolute;
+	z-index: 1;
+	justify-content: center;
+}
+
+.blog-content-container {
+	padding: 1rem!important;
+	background-color: rgb(19 16 68 / 75%);
+	box-shadow: 0 1rem 2rem rgba(178, 177, 177, 0.05);
+	border-radius: 1rem;
+}
+
+
+.blog-add-card h2 {
+	text-align: center;
+	color: black;
+	font-weight: bolder;
+	text-decoration: underline crimson;
+}
+
+.blog-add-card.hide {
+	visibility: hidden;
+}
+
+.blog-add-card.show {
+	visibility: visible;
+}
+
+/*noinspection CssInvalidPropertyValue*/
+.blog-input-box {
+	margin: 1em 2em 1em 2em;
+	padding: 1rem;
+	width: -webkit-fill-available;
+	height: 3em;
+	border-radius: 1em;
+	border: none;
+	box-shadow: 0 1rem 2rem rgba(215, 212, 212, 0.27);
+}
+
+.blog-submit-box {
+	color: whitesmoke;
+}
+
+textarea.blog-input-box {
+	min-height: 10em;
+}
+
+/*noinspection CssInvalidPropertyValue*/
+#addEntry {
+	width: -webkit-fill-available;
+}
+
+#blog {
+	justify-content: center;
 }
 
 .add-post {

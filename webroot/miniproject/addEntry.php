@@ -1,7 +1,18 @@
 <html>
 <body>
-<?php
-
-?>
+<section id="addBlogPage" class="blog-add-card hide">
+	<header>
+		<h2>
+			Add Blog Post
+		</h2>
+	</header>
+	<section class="blog-content-container row">
+		<form id="addEntry">
+			<input id="title" name="title" type="text" placeholder="Title" class="blog-input-box" maxlength="32" required>
+			<textarea id="blogContent" name="blogContent" placeholder="Enter your blog... " class="blog-input-box" required></textarea>
+			<button id="submit" type="submit" class="row blog-submit-box">Submit</button>
+		</form>
+	</section>
+</section>
 </body>
 </html>
