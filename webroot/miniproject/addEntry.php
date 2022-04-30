@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <body>
 <section id="addBlogPage" class="blog-add-card hide">
 	<header>
