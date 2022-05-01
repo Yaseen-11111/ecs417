@@ -32,8 +32,14 @@
 		<li>
 			<a href="#blog">Blog</a>
 		</li>
-		<li id="logBox">
-			<a href="login.html">Log in</a>
+		<li id='logBox'>
+		<?php
+		if (isset($_COOKIE['SESSION_KEY'])) {
+			echo "<a href='logout.php'>Log out</a>";
+		} else {
+			echo "<a href='login.html'>Log in</a>";
+		}
+		?>
 		</li>
 	</ul>
 </nav>
@@ -41,6 +47,11 @@
 	<header>
 		<h1>
 			Welcome to my portfolio
+		<?php
+			if (isset($_COOKIE['USERNAME'])) {
+				echo ", {$_COOKIE['USERNAME']}";
+			}
+		?>
 		</h1>
 	</header>
 	<section id="aboutMe" class="content-container-1 row">
@@ -121,10 +132,9 @@
 			</header>
 		</section>
 	</section><hr>
-
 	<section id="blog" class="content-container row">
 		<?php require ('addEntry.php')?>
-		<section id="blogContainer" class="col-fit content">
+		<section id="blogContainer" class="col-fit content blog-content">
 			<header>
 				<h2 class="col">
 					My Blog
@@ -145,4 +155,6 @@
 	</section>
 </footer>
 </body>
+
 </html>
+

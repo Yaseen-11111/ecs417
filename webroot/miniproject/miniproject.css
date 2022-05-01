@@ -61,6 +61,12 @@ nav .nav-bar , nav .nav-bar li, nav {
 	color: whitesmoke;
 }
 
+nav {
+	position: fixed;
+	background-color: #000000b0;
+	padding-bottom: 0.5em;
+}
+
 nav .nav-bar a, nav a {
 	width: 100%;
 	display: inline-flex;
@@ -261,6 +267,10 @@ header hr {
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0 1rem 2rem rgba(178, 177, 177, 0.05);
 	border-radius: 1rem;
+}
+
+.blog-content {
+	max-width: inherit!important;
 }
 
 /*noinspection CssInvalidPropertyValue*/
