@@ -133,14 +133,22 @@
 		</section>
 	</section><hr>
 	<section id="blog" class="content-container row">
-		<?php require ('addEntry.php')?>
+		<?php
+			if (isset($_COOKIE["USERNAME"])) {
+				require('addPost.php');
+			}
+		?>
 		<section id="blogContainer" class="col-fit content blog-content">
 			<header>
 				<h2 class="col">
 					My Blog
 				</h2>
-				<button id="addPost" class="add-post" type="button">Add Post</button>
-				<script src="addPost.js"></script>
+				<?php
+				if (isset($_COOKIE["USERNAME"])) {
+					echo "<button id='addPost' class='add-post' type='button'>Add Post</button>";
+					echo "<script src='addPost.js'></script>";
+				}
+				?>
 				<hr>
 			</header>
 			<?php require ('viewBlog.php')?>

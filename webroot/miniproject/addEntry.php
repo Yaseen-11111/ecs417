@@ -1,19 +1,29 @@
-<html lang="en">
-<body>
-<section id="addBlogPage" class="blog-add-card hide">
-	<header>
-		<h2>
-			Add Blog Post
-		</h2>
-	</header>
-	<section class="blog-content-container row">
-		<form id="addEntry">
-			<input id="title" name="title" type="text" placeholder="Title" class="blog-input-box" maxlength="32" required>
-			<textarea id="blogContent" name="blogContent" placeholder="Enter your blog... " class="blog-input-box blog-textarea" required></textarea>
-			<button id="submit" type="submit" class="button-box submit">Submit</button>
-			<button id="clear" type="reset" class="button-box clear">Clear</button>
-		</form>
-	</section>
-</section>
-</body>
-</html>
+<?php
+include "config.php";
+
+try {
+	$pdo = getConnection();
+} catch (PDOException $ex) {
+	return;
+}
+
+if (isset($_POST['add_entry'])) {
+	if (!empty($_POST["Title"] || !empty($_POST["Description"]))) {
+		$title = $_POST["Title"];
+		$description = $_POST["Description"];
+		$uname = $_COOKIE["USERNAME"];
+		$date = date("d/m/Y");
+	} else {
+		return;
+	}
+
+	try {
+		$stmt = $pdo->prepare("INSERT INTO blogs (Username, Title, Description, Date) VALUES (?, ?, ?, ?)");
+		$stmt->execute([$uname, $title, $description, $date]);
+		$pdo = null;
+		header('location: index.php');
+	} catch (PDOException $ex) {
+		$pdo = null;
+		return;
+	}
+}

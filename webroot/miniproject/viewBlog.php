@@ -2,9 +2,14 @@
 <body>
 <?php
 include "config.php";
-$pdo = getConnection();
+try {
+	$pdo = getConnection();
+} catch (PDOException $ex) {
+	return;
+}
 $stmt = $pdo->prepare("SELECT * FROM blogs");
 $stmt->execute();
+$pdo = null;
 
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 	echo "<section class='blog-card'>";
