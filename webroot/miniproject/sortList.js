@@ -7,6 +7,7 @@ sort.addEventListener("click", () => {
 })
 
 blogEntry.addEventListener("load", () => {
+	alert("blogEntry created!");
 	sortEntry();
 })
 

@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>My Portfolio</title>
 </head>
-<body id="indexBody">
+<body id="indexBody" onload="sortEntry()">
 <nav>
 	<a>
 		LOGO TO BE PLACED
