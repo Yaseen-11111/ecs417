@@ -14,6 +14,7 @@ if (isset($_POST['add_entry'])) {
 		$uname = $_COOKIE["USERNAME"];
 		$date = date("d/m/Y");
 	} else {
+		header('location: index.php');
 		return;
 	}
 
@@ -24,6 +25,7 @@ if (isset($_POST['add_entry'])) {
 		header('location: index.php');
 	} catch (PDOException $ex) {
 		$pdo = null;
+		header('location: index.php');
 		return;
 	}
 }

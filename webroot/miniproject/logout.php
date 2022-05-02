@@ -16,5 +16,6 @@ setcookie('SESSION_KEY', null);
 setcookie('USERNAME', null);
 echo "<script>alert('Logged out!')</script>";
 header('location: index.php');
+session_abort();
 
 

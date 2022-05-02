@@ -149,6 +149,16 @@
 					echo "<script src='addPost.js'></script>";
 				}
 				?>
+				<select id="order-list" name="order_list" class="order-list">
+					<option selected value="a_date">Ascending date</option>
+					<option value="d_date">Descending date</option>
+					<option value="a_alpha">Ascending Alphabetical order</option>
+					<option value="d_alpha">Descending Alphabetical order</option>
+				</select>
+				<?php
+					require __DIR__ . '/viewBlog.php';
+				?>
+				<button id="sort" type="submit" name="sort" class="sort-post" onsubmit="<?php echo sortList() ?>">Sort</button>
 				<hr>
 			</header>
 			<?php require ('viewBlog.php')?>

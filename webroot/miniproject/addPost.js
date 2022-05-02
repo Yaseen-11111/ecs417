@@ -1,8 +1,11 @@
 const addPostBtn = document.getElementById("addPost");
 const addPostPage = document.getElementById("addBlogPage");
 const blogContainer = document.getElementById("blogContainer");
+const submit = document.getElementById("submit");
+const form = document.getElementById("addEntry");
+const addEntry = "addEntry.php";
 
-const addPostPageQuer = document.querySelector("#addBlogPage");
+const addPostPageQuery = document.querySelector("#addBlogPage");
 
 addPostBtn.addEventListener("click", ev => {
 	if (addPostPage.className === "blog-add-card hide") {
@@ -13,7 +16,7 @@ addPostBtn.addEventListener("click", ev => {
 })
 
 document.addEventListener("mousedown", ev => {
-	if (addPostPageQuer.contains(ev.target)) {
+	if (addPostPageQuery.contains(ev.target)) {
 
 	} else {
 		addPostPage.className = "blog-add-card hide";

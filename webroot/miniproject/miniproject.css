@@ -322,10 +322,15 @@ header hr {
 	padding: 1rem;
 	width: -webkit-fill-available;
 	height: 3em;
-	border-radius: 1em;
+	border-radius: 0.5em;
 	border: none;
 	box-shadow: 0 1rem 2rem rgba(215, 212, 212, 0.27);
 }
+
+.blog-input-box:focus:invalid {
+	outline-color: rgba(184, 44, 72, 0.83);
+}
+
 
 .blog-submit-box {
 	color: whitesmoke;
@@ -344,17 +349,31 @@ textarea.blog-input-box {
 	justify-content: center;
 }
 
-.add-post {
+.add-post, .sort-post {
 	padding: 0.5em 2em;
 	border: none;
 	border-radius: 0.5em;
 	box-shadow: 0 0.5rem 1rem rgba(210, 209, 209, 0.05);
-	background-color: rgba(108, 103, 180, 0.6);
 	color: whitesmoke;
+}
+
+.add-post {
+	background-color: rgba(108, 103, 180, 0.6);
+}
+
+.sort-post {
+	background-color: rgba(192, 192, 192, 0.8);
+	color: black;
 }
 
 button:hover {
 	opacity: 0.8;
+}
+
+.order-list {
+	margin-left: 1em;
+	border-radius: 0.25em;
+	padding: 0.25em;
 }
 
 .content-container .blog-card, .blog-card header h3, .blog-card header h1, .blog-card header h2, .blog-card header a, .blog-card p {
@@ -396,5 +415,7 @@ footer i {
 	padding: 2em;
 	text-decoration: underline crimson;
 }
+
+
 
 
