@@ -17,6 +17,5 @@ function sortEntry() {
 		.then(res => res.text())
 		.then(data => {
 			blogEntry.innerHTML = data;
-			console.log(data);
 		});
 }

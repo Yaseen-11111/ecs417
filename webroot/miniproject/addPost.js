@@ -1,6 +1,7 @@
 const addPostBtn = document.getElementById("addPost");
 const addPostPage = document.getElementById("addBlogPage");
 const blogContainer = document.getElementById("blogContainer");
+const blogAddSub = document.getElementById("submit");
 
 const addPostPageQuery = document.querySelector("#addBlogPage");
 
@@ -20,3 +21,5 @@ document.addEventListener("mousedown", ev => {
 		blogContainer.style.opacity = "1";
 	}
 })
+
+

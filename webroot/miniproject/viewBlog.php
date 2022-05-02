@@ -20,8 +20,6 @@ $stmt = $pdo->prepare("SELECT *  FROM blogs ORDER BY $column $order");
 $stmt->execute();
 $pdo = null;
 
-$html = "";
-
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 	echo "<section class='blog-card'>";
 	echo 	"<header>";
@@ -34,19 +32,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				</p>";
 	echo 	"</section>";
 	echo "</section>";
-	
-	$html .= "<section class='blog-card'>".
-	 	"<header>".
-	 		"<h3>{$row['Title']}</h3>".
-	 		"<a>{$row['Username']}</a><br><br>".
-	 		"<a>{$row['Date']}</a>".
-	 	"</header><hr>".
-	 	"<section class='content'>".
-	  		"<p>{$row['Description']}</p>".
-	 	"</section>".
-	 "</section>";
 }
-return $html;
 ?>
 </body>
 </html>
