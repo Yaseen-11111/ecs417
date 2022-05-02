@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49c0b516-2518-4fbc-80d7-c486caec5fe8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/sortList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addEntry.php" beforeDir="false" afterPath="$PROJECT_DIR$/addEntry.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/addPost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/addPost.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miniproject.css" beforeDir="false" afterPath="$PROJECT_DIR$/miniproject.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/viewBlog.php" beforeDir="false" afterPath="$PROJECT_DIR$/viewBlog.php" afterDir="false" />
     </list>
@@ -112,6 +109,7 @@
       <workItem from="1651423051095" duration="2759000" />
       <workItem from="1651428111057" duration="9795000" />
       <workItem from="1651479025332" duration="8379000" />
+      <workItem from="1651509487215" duration="8123000" />
     </task>
     <servers />
   </component>

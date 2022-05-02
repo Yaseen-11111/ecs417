@@ -149,19 +149,21 @@
 					echo "<script src='addPost.js'></script>";
 				}
 				?>
-				<select id="order-list" name="order_list" class="order-list">
-					<option selected value="a_date">Ascending date</option>
-					<option value="d_date">Descending date</option>
-					<option value="a_alpha">Ascending Alphabetical order</option>
-					<option value="d_alpha">Descending Alphabetical order</option>
+				<select id="orderList" name="order_list" class="order-list">
+					<option selected value="column=Date&order=asc">Ascending date</option>
+					<option value="column=Date&order=desc">Descending date</option>
+					<option value="column=Title&order=asc">Ascending Alphabetical order</option>
+					<option value="column=Title&order=desc">Descending Alphabetical order</option>
 				</select>
-				<?php
-					require __DIR__ . '/viewBlog.php';
-				?>
-				<button id="sort" type="submit" name="sort" class="sort-post" onsubmit="<?php echo sortList() ?>">Sort</button>
+				<button id="sort" type="button" name="sort" class="sort-post">Sort</button>
+
 				<hr>
 			</header>
-			<?php require ('viewBlog.php')?>
+			<div id="blogEntry">
+			</div>
+			<?php
+			echo "<script src='sortList.js'></script>";
+			?>
 		</section>
 	</section><hr>
 </article>

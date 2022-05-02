@@ -1,41 +1,52 @@
-<html>
+<html lang="en">
 <body>
 <?php
-function sortList($sort) {
-	include "config.php";
-	try {
-		$pdo = getConnection();
-	} catch (PDOException) {
-		return;
-	}
-	switch ($sort) {
-		case "a_date ": $sort = "Date asc";
-		break;
-		case "d_date": $sort = "Date desc";
-		break;
-		case "a_a": $sort = "Title asc";
-		break;
-		case "d_a": $sort = "Title desc";
-		break;
-	}
-	$stmt = $pdo->prepare("SELECT *  FROM blogs ORDER BY $sort");
-	$stmt->execute();
-	$pdo = null;
-
-	while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-		echo "<section class='blog-card'>";
-		echo 	"<header>";
-		echo 		"<h3>{$row['Title']}</h3>";
-		echo 		"<a>{$row['Username']}</a><br><br>";
-		echo 		"<a>{$row['Date']}</a>";
-		echo 	"</header><hr>";
-		echo 	"<section class='content'>";
-		echo  		"<p>{$row['Description']}
-				</p>";
-		echo 	"</section>";
-		echo "</section>";
-	}
+include "config.php";
+try {
+	$pdo = getConnection();
+} catch (PDOException) {
+	return;
 }
+
+$column = "Date";
+$order = "asc";
+
+if (isset($_GET['column']) || isset($_GET['order'])) {
+	$column = $_GET['column'];
+	$order = $_GET['order'];
+}
+
+$stmt = $pdo->prepare("SELECT *  FROM blogs ORDER BY $column $order");
+$stmt->execute();
+$pdo = null;
+
+$html = "";
+
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+	echo "<section class='blog-card'>";
+	echo 	"<header>";
+	echo 		"<h3>{$row['Title']}</h3>";
+	echo 		"<a>{$row['Username']}</a><br><br>";
+	echo 		"<a>{$row['Date']}</a>";
+	echo 	"</header><hr>";
+	echo 	"<section class='content'>";
+	echo  		"<p>{$row['Description']}
+				</p>";
+	echo 	"</section>";
+	echo "</section>";
+	
+	$html .= "<section class='blog-card'>".
+	 	"<header>".
+	 		"<h3>{$row['Title']}</h3>".
+	 		"<a>{$row['Username']}</a><br><br>".
+	 		"<a>{$row['Date']}</a>".
+	 	"</header><hr>".
+	 	"<section class='content'>".
+	  		"<p>{$row['Description']}</p>".
+	 	"</section>".
+	 "</section>";
+}
+return $html;
 ?>
 </body>
 </html>

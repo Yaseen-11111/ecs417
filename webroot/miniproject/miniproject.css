@@ -372,6 +372,7 @@ button:hover {
 
 .order-list {
 	margin-left: 1em;
+	margin-bottom: 1em;
 	border-radius: 0.25em;
 	padding: 0.25em;
 }
