@@ -48,6 +48,9 @@ if(isset($_POST['login'])){
 			echo "Username or password incorrect";
 			return;
 		}
+		if (session_status() === PHP_SESSION_NONE && !headers_sent()) {
+			session_start();
+		}
 		header('location: index.php');
 
 	} else {

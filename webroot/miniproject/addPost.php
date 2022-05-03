@@ -8,10 +8,10 @@
 		</h2>
 	</header>
 	<section class="blog-content-container row">
-		<form id="addEntry" action="addEntry.php" method="post">
-			<input id="title" name="Title" type="text" placeholder="Title" class="blog-input-box" maxlength="32" required oninvalid="this.setCustomValidity('Enter the title... ')"  oninput="this.setCustomValidity('')">
-			<textarea id="blogContent" name="Description" placeholder="Enter your blog... " class="blog-input-box blog-textarea" required oninvalid="this.setCustomValidity('Enter the description... ')"  oninput="this.setCustomValidity('')"></textarea>
-			<button id="submit" name="add_entry" type="submit" class="button-box submit">Submit</button>
+		<form id="addEntry">
+			<input id="titlePre" name="Title" type="text" placeholder="Title" class="blog-input-box" maxlength="32">
+			<textarea id="descPre" name="Description" placeholder="Enter your blog... " class="blog-input-box blog-textarea" ></textarea>
+			<button id="preview" type="button" class="button-box submit">Preview</button>
 			<button id="clear" type="reset" class="button-box clear">Clear</button>
 		</form>
 	</section>

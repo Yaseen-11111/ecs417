@@ -1,7 +1,5 @@
 <?php
-if (session_status() === PHP_SESSION_NONE && !headers_sent()) {
-	session_start();
-}
+
 
 const DB_SERVER = 'localhost';
 const DB_USERNAME = 'root';

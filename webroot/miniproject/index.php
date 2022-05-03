@@ -136,6 +136,7 @@
 		<?php
 			if (isset($_COOKIE["USERNAME"])) {
 				require('addPost.php');
+				require('postPreview.php');
 			}
 		?>
 		<section id="blogContainer" class="col-fit content blog-content">

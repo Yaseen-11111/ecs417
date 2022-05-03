@@ -274,7 +274,7 @@ header hr {
 }
 
 /*noinspection CssInvalidPropertyValue*/
-.blog-add-card {
+.blog-add-card, .blog-preview-card {
 	color: black !important;
 	padding: 1rem !important;
 	margin: auto;
@@ -301,18 +301,18 @@ header hr {
 }
 
 
-.blog-add-card h2 {
+.blog-add-card h2, .blog-preview-card h2 {
 	text-align: center;
 	color: black;
 	font-weight: bolder;
 	text-decoration: underline crimson;
 }
 
-.blog-add-card.hide {
+.blog-add-card.hide, .blog-preview-card.hide {
 	visibility: hidden;
 }
 
-.blog-add-card.show {
+.blog-add-card.show, .blog-preview-card.show {
 	visibility: visible;
 }
 
