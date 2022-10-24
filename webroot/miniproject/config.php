@@ -3,7 +3,7 @@
 
 const DB_SERVER = 'localhost';
 const DB_USERNAME = 'root';
-const DB_PASSWORD = 'Yaseen999.';
+const DB_PASSWORD = '*********';
 const DB_DATABASE = 'miniproject';
 
 function getConnection(): ?PDO
